@@ -1,5 +1,11 @@
 /* Headings */
-
+h1#title {
+    .rounded-corners(1.5em);
+    background-color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: .8;
+}
 h2 {
     margin-top: .8em;
     margin-bottom: .2em;
@@ -8,9 +14,17 @@ h2 {
 }
 h3 {
     font-size: 1em;
-    color: #666;
-    margin-top: .2em;
-    margin-bottom: .2em;
-    margin-left: 0;
-    margin-right: 0;
+color: #666;
+       margin-top: .2em;
+       margin-bottom: .2em;
+       margin-left: 0;
+       margin-right: 0;
+}
+h3 span{ float: right;} //dates inside h3 float right
+
+/* Links */
+
+a{
+    font-weight: bold;
+    color: @themePrimary;
 }
