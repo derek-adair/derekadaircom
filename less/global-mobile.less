@@ -1,20 +1,20 @@
 /* ===== Initializr Styles =====================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
+Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+========================================================================== */
 /* ===== Customizations ========================================================
-   Author: Derek Adair - http://derekadair.com
-   ========================================================================== */
+Author: Derek Adair - http://derekadair.com
+========================================================================== */
 
 body{ font:16/28px Helvetica, Helvetica Neue, Arial; }
 
 .wrapper{
-	width:90%;
-	margin:0 5%;
+    width:90%;
+    margin:0 5%;
 }
 
 /* ===================
-    ALL: Orange Theme
-   =================== */
+ALL: Orange Theme
+=================== */
 #header-container{ border-bottom: 20px solid @themeSecondary; }
 #footer-container{ border-top:    20px solid @themeSecondary; }
 #main aside      { border-top:    20px solid @themeSecondary; }
@@ -22,7 +22,7 @@ body{ font:16/28px Helvetica, Helvetica Neue, Arial; }
 #header-container,
 #footer-container,
 #main aside{
-	background:@themePrimary;
+    background:@themePrimary;
 }
 #title{ color:white; }
 
@@ -30,54 +30,44 @@ body{ font:16/28px Helvetica, Helvetica Neue, Arial; }
 ::selection      { background: #f16529; color: #fff; text-shadow: none; }
 
 /* ==============
-    MOBILE: Menu
-   ============== */
+MOBILE: Menu
+============== */
 
 nav a{
-	display:block;
-	margin-bottom:10px;
-	padding:15px 0;
+    display:block;
+    margin-bottom:10px;
+    padding:15px 0;
 
-	background:@themeSecondary;
-	color:white;
+    background:transparent url(../img/link-bg.png) bottom left;
+    color:white;
 
-	text-align:center;
-	text-decoration:none;
-	font-weight:bold;
+    text-align:center;
+    text-decoration:none;
 }
-
-nav a:hover, nav a:visited{
-	color:white;
-}
-
-nav a:hover{
-	text-decoration:underline;
-}
-
 /* ==============
-    MOBILE: Main
-   ============== */
+MOBILE: Main
+============== */
 
 #main{
-	padding:30px 0;
+    padding:30px 0;
 }
 
 #main article h1{
-	font-size:2em;
+    font-size:2em;
 }
 
 #main aside{
-	color:white;
-	padding:0px 5% 10px;
+    color:white;
+    padding:0px 5% 10px;
 }
 
 #footer-container footer{
-	color:white;
-	padding:20px 0;
+    color:white;
+    padding:20px 0;
 }
 
 /* ===============
-    ALL: IE Fixes
-   =============== */
+ALL: IE Fixes
+=============== */
 
 .ie7 #title{ padding-top:20px; }
