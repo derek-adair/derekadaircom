@@ -30,8 +30,8 @@ $(document).ready(function(){
     });
 
     $("#main").on('pjax:end',   function() { 
+        console.log(this);
         // HACK HACK HACK HACK HACK HACK HAK HACK HACK HAKHAKHAKHAKHA
         $('a[href="http://www.foxyform.com"]').css('display', 'none');
-        console.log('blah...');
     });
 });
