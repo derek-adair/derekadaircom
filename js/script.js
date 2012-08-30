@@ -1,8 +1,5 @@
-/* Author: Derek Adair
-
-*/
+/* Author: Derek Adair */
 $(document).ready(function(){ 
-
     // HACK HACK HACK HACK HACK HACK HAK HACK HACK HAKHAKHAKHAKHA
     $('a[href="http://www.foxyform.com"]').css('display', 'none');
     // end hackery
@@ -30,8 +27,6 @@ $(document).ready(function(){
     });
 
     $("#main").on('pjax:end',   function() { 
-        console.log(this);
-        // HACK HACK HACK HACK HACK HACK HAK HACK HACK HAKHAKHAKHAKHA
         $('a[href="http://www.foxyform.com"]').css('display', 'none');
     });
 });

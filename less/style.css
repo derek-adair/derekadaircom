@@ -1,19 +1,4 @@
-/*
-@purplePrimary: #781551;
-@purpleSecondary: #661E4A;
-@purpleTertiary: #5F0C3E;
-@purpleQuadrinary: #AD3A80;
-
-@brownPrimary: #984C1B;
-@brownSecondary: #6D462D;
-@brownTertiary: #5B2807;
-@brownQaudrinary: #C27543;
-
-@bluePrimary: #301C69;
-@blueSecondary: #2E244B;
-@blueTertiary: #16073F;
-@blueQuadrinary: #5E45A6;
-*/
+/* Headings */
 /* =============================================================================
    HTML5 Boilerplate CSS: h5bp.com/css
    ========================================================================== */
@@ -270,7 +255,18 @@ td {
 @blueSecondary: #2E244B;
 @blueTertiary: #16073F;
 @blueQuadrinary: #5E45A6;
+
+@redPrimary: #CC0000;
+@redSecondary: #993333;
+@redTertiary: #990000;
+@redHighlight: #990066; // or #CC6600 / #663366 / #FFCC66
 */
+nav li a {
+  -moz-transition: background-position 1s ease-in-out;
+}
+nav li a:hover {
+  background-position: top left;
+}
 /* Headings */
 h1#title {
   border-radius: 1.5em;
@@ -327,13 +323,13 @@ body {
 ALL: Orange Theme
 =================== */
 #header-container {
-  border-bottom: 20px solid #216278;
+  border-bottom: 10px solid #216278;
 }
 #footer-container {
-  border-top: 20px solid #216278;
+  border-top: 10px solid #216278;
 }
 #main aside {
-  border-top: 20px solid #216278;
+  border-top: 10px solid #216278;
 }
 #header-container,
 #footer-container,
@@ -355,12 +351,12 @@ ALL: Orange Theme
 }
 /* ==============
 MOBILE: Menu
-============== */
-nav a {
+============== */nav a {
   display: block;
   margin-bottom: 10px;
   padding: 15px 0;
-  background: transparent url(../img/link-bg.png) bottom left;
+  background: transparent url(../img/link-bg.png);
+  background-position: bottom left;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -380,7 +376,7 @@ MOBILE: Main
 }
 #footer-container footer {
   color: white;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 /* ===============
 ALL: IE Fixes
@@ -390,27 +386,65 @@ ALL: IE Fixes
 }
 /* ===== Primary Styles ========================================================
 Author: Derek Adair
-========================================================================== */
+============================================================================= */
 /* TODO: 
  * - Come up with better contact form presentation 
  */
 #header-container,
 #footer-container {
-  background: #0a7d90 url(../img/waves.white.jpg) top left repeat-x;
+  background: #0a7d90 url(../img/waves.jpg) top left repeat-x;
 }
 #footer-container #js-docs {
   float: right;
 }
-table {
-  margin: 0 auto;
+/* ===== Page Specific  ========================================================
+Author: Derek Adair
+============================================================================= */
+/* ========================
+   Gallery
+   ======================== */
+.minimal-gallery {
+  height: 500px;
+  padding: 0;
+  margin: 0;
 }
+.minimal-gallery img {
+  width: 100%;
+}
+.minimal-gallery-item {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+.minimal-gallery-active {
+  width: 100%;
+}
+.minimal-gallery-thumb {
+  width: 32.3%;
+  padding: .5%;
+}
+.minimal-gallery-thumb:last-child {
+  padding-right: 0;
+}
+/* ========================
+   General
+   ======================== */
+.portfolio-piece-description {
+  box-sizing: border-box;
+}
+#portfolio section h2 {
+  margin-top: 0;
+}
+/* ===== Vendor ================================================================
+Author: Derek Adair
+============================================================================= */
 /* =============================================================================
-   Media Queries
-   ========================================================================== */
+    Media Queries
+    ========================================================================== */
 @media only screen and (min-width: 480px) {
   /* ====================
       INTERMEDIATE: Menu
-     ==================== */
+      ==================== */
   nav a {
     float: left;
     width: 27%;
@@ -433,11 +467,35 @@ table {
   .oldie nav a {
     margin: 0 0.7%;
   }
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  .minimal-gallery-active {
+    width: 73%;
+  }
+  .minimal-gallery-thumb {
+    width: 23%;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: .55em;
+    padding-left: .55em;
+  }
 }
 @media only screen and (min-width: 768px) {
+  /* ==============================
+      WIDE: Portfolio Page
+      ============================== */
+  .minimal-gallery {
+    width: 63%;
+    float: left;
+  }
+  .portfolio-piece-description {
+    width: 37%;
+    float: right;
+  }
   /* ====================
       WIDE: CSS3 Effects
-     ==================== */
+      ==================== */
   #header-container,
   #main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
@@ -446,7 +504,7 @@ table {
   }
   /* ============
       WIDE: Menu
-     ============ */
+      ============ */
   #title {
     float: left;
   }
@@ -459,7 +517,7 @@ table {
   }
   /* ============
       WIDE: Main
-     ============ */
+      ============ */
   #main article {
     float: left;
     width: 57%;
@@ -472,7 +530,7 @@ table {
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
-     =============== */
+      =============== */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -593,3 +651,5 @@ table {
     page-break-after: avoid;
   }
 }
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

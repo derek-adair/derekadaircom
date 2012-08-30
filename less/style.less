@@ -1,28 +1,33 @@
 @import "normalize.less";
 @import "mixins.less";
 @import "colors.less";
+@import "animate.less";
 @import "fonts.less";
 @import "global-mobile.less";
 
 /* ===== Primary Styles ========================================================
 Author: Derek Adair
-========================================================================== */
+============================================================================= */
 
 /* TODO: 
  * - Come up with better contact form presentation 
  */
 
 
-
 #header-container,
-#footer-container{background: #0a7d90 url(../img/waves.white.jpg) top left repeat-x;}
+#footer-container{background: #0a7d90 url(../img/waves.jpg) top left repeat-x;}
 
 #footer-container #js-docs{float: right}
 
-table { margin: 0 auto; }
 
+/* ===== Page Specific  ========================================================
+Author: Derek Adair
+============================================================================= */
+@import "portfolio.less";
 
-
+/* ===== Vendor ================================================================
+Author: Derek Adair
+============================================================================= */
 @import "media-queries.less";
 @import "helpers.less";
 @import "print.less";
