@@ -320,7 +320,7 @@ body {
   margin: 0 5%;
 }
 /* ===================
-ALL: Orange Theme
+ALL: Adair Theme
 =================== */
 #header-container {
   border-bottom: 10px solid #216278;
@@ -591,6 +591,9 @@ Author: Derek Adair
 }
 .clearfix {
   *zoom: 1;
+}
+.divider {
+  background-color: #216278;
 }
 /* =============================================================================
    Print Styles
