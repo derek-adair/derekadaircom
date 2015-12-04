@@ -1,0 +1,21 @@
+{
+  "name": "reason-theme",
+  "description": "Artificial Reason theme",
+  "version": "1.4.6",
+  "homepage": "https://wrapbootstrap.com/theme/artificial-reason-responsive-full-pack-WB0307B17",
+  "author": "Adrian Guerra Marrero",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.7",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-connect": "~0.11.2",
+    "grunt-contrib-copy": "~0.8.2",
+    "grunt-contrib-less": "~1.1.0",
+    "grunt-contrib-uglify": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-dom-munger": "~3.4",
+    "grunt-jsbeautifier": "~0.2.10",
+    "grunt-processhtml": "~0.3.8",
+    "load-grunt-tasks": "~3.3.0"
+  }
+}
